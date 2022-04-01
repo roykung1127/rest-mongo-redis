@@ -26,7 +26,6 @@ public class MovieCustomDALimpl implements MovieCustomDAL{
         movie.setCreateDate(LocalDateTime.now());
         mongoTemplate.insert(movie);
         return movie;
-        
     }
 
     @Override
